@@ -24,11 +24,16 @@ import ExpanseItem from "./components/ExpenseItem";
 // }
 
 function App() {
+  // to show data dynamically create seprate data
   const expanse = [
     { id: 'e1', title: 'Headphone', amount: '453.12', date: new Date(2022, 2, 2) },
     { id: 'e2', title: 'Mouse', amount: '200.12', date: new Date(2022, 2, 1) },
     { id: 'e3', title: 'Keyboard', amount: '100.12', date: new Date(2022, 1, 2) },
   ];
+
+  // add custom properties name to custom Components
+  // small letter JSX elements are default components
+  // Capital Letter JSX elements are Custom Components
   return (
     <div>
       <h1>Let's Get Started.</h1>
@@ -36,9 +41,6 @@ function App() {
       <ExpanseItem title={expanse[0].title} amount={expanse[0].amount} date={expanse[0].date} />
       <ExpanseItem title={expanse[1].title} amount={expanse[1].amount} date={expanse[1].date} />
       <ExpanseItem title={expanse[2].title} amount={expanse[2].amount} date={expanse[2].date} />
-
-
-
     </div>
   );
 }

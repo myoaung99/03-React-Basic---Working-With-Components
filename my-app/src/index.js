@@ -4,11 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// use render method from imported ReactDom object
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
   document.getElementById('root')
+  // Render <App/> Compontent at id root element
 );
 
 // If you want to start measuring performance in your app, pass a function
