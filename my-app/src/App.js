@@ -32,9 +32,13 @@ function App() {
   return (
     <div>
       <h1>Let's Get Started.</h1>
-      expanse.map(function(e){
-        <ExpanseItem title={e.title} amount={ex.amount} date={e.date.toDateString()} />
-      })
+
+      <ExpanseItem title={expanse[0].title} amount={expanse[0].amount} date={expanse[0].date.toDateString()} />
+      <ExpanseItem title={expanse[1].title} amount={expanse[1].amount} date={expanse[1].date.toDateString()} />
+      <ExpanseItem title={expanse[2].title} amount={expanse[2].amount} date={expanse[2].date.toDateString()} />
+
+
+
     </div>
   );
 }
