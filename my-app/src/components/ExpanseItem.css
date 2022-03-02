@@ -6,10 +6,7 @@
   border-radius: 1rem;
   margin: 20px 0;
 }
-.expanse-item-date {
-  padding: 0 10px;
-  font-size: 1.2rem;
-}
+
 .expanse-item-des {
   flex-grow: 1;
   display: flex;
