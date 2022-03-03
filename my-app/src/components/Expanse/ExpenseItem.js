@@ -1,5 +1,6 @@
+import React from 'react';
 import ExpanseDate from "./ExpanseDate";
-import Card from './Card';
+import Card from '../UI/Card';
 import "./ExpanseItem.css";
 
 // props method accept all incoming properties from other Components

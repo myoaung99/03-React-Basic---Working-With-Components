@@ -1,7 +1,8 @@
 import logo from "./logo.svg";
+import React from 'react';
 import "./App.css";
-import ExpanseItem from "./components/ExpenseItem";
-import Card from './components/Card'
+import ExpanseItem from "./components/Expanse/ExpenseItem";
+import Card from './components/UI/Card'
 
 // function App() {
 //   return (

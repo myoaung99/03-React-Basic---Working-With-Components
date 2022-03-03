@@ -1,3 +1,4 @@
+import React from 'react';
 import './ExpanseDate.css';
 function ExpanseDate(props) {
   // Sepreating Js date logic from JSX syntax
