@@ -1,0 +1,52 @@
+.new-expanse__controls{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.new-expanse__control{
+  width: 50%;
+  margin-bottom: 20px;
+  
+}
+
+.new-expanse__control:nth-of-type(2){
+  display: flex;
+  justify-content: space-between;
+}
+
+.new-expanse__control input{
+  font-size: 1rem;
+  width: 60%;
+  padding: 10px;
+  margin: 0 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+.new-expanse__control:nth-of-type(2) input{
+  margin: 0;
+}
+
+.new-expanse__control:nth-of-type(2) label{
+  margin-left: 30px;
+}
+
+
+.new-expanse__control label{
+  font-size: 1.5rem;
+}
+
+.new-expanse__action__container{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.new-expanse__action__btn{
+  background-color: #3f7779;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 1.2rem;
+  font-size: 1.3rem;
+  border: 2px solid white ;
+}

@@ -3,6 +3,7 @@ import React from 'react';
 import "./App.css";
 import ExpanseItem from "./components/Expanse/ExpenseItem";
 import Card from './components/UI/Card'
+import NewExpanse from './components/NewExpanse/NewExpanse'
 
 // function App() {
 //   return (
@@ -36,13 +37,18 @@ function App() {
   // add custom properties name to custom Components
   // small letter JSX elements are default components
   // Capital Letter JSX elements are Custom Components
-  return (
+  return (<div className="card-container">
+
+    <NewExpanse className="new-expanse-container" />
 
     <Card className="expanse-container">
       <ExpanseItem title={expanse[0].title} amount={expanse[0].amount} date={expanse[0].date} />
       <ExpanseItem title={expanse[1].title} amount={expanse[1].amount} date={expanse[1].date} />
       <ExpanseItem title={expanse[2].title} amount={expanse[2].amount} date={expanse[2].date} />
     </Card>
+  </div>
+
+
 
   );
 }

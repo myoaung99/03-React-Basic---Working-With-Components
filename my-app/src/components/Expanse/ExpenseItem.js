@@ -14,7 +14,7 @@ export default function ExpanseItem(props) {
   // Normal EventHandler
   const clickHandler = () => {
     // method that comes from useState
-    setTitle('Updatedg')
+    setTitle('Updated')
   }
 
   // HTML liked JSX codes
