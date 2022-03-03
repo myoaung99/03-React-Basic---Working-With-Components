@@ -29,7 +29,7 @@ function App() {
   const expanse = [
     { id: 'e1', title: 'Headphone', amount: '453.12', date: new Date(2022, 2, 2) },
     { id: 'e2', title: 'Mouse', amount: '200.12', date: new Date(2022, 2, 1) },
-    { id: 'e3', title: 'Keyboard', amount: '100.12', date: new Date(2022, 1, 2) },
+    { id: 'e3', title: 'Keyboard', amount: '100.12', date: new Date(2021, 4, 2) },
   ];
 
   // add custom properties name to custom Components
