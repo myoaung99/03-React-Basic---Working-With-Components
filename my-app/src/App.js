@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import ExpanseItem from "./components/ExpenseItem";
+import Card from './components/Card'
 
 // function App() {
 //   return (
@@ -35,13 +36,13 @@ function App() {
   // small letter JSX elements are default components
   // Capital Letter JSX elements are Custom Components
   return (
-    <div>
-      <h1>Let's Get Started.</h1>
 
+    <Card className="expanse-container">
       <ExpanseItem title={expanse[0].title} amount={expanse[0].amount} date={expanse[0].date} />
       <ExpanseItem title={expanse[1].title} amount={expanse[1].amount} date={expanse[1].date} />
       <ExpanseItem title={expanse[2].title} amount={expanse[2].amount} date={expanse[2].date} />
-    </div>
+    </Card>
+
   );
 }
 

@@ -1,3 +1,4 @@
+import './ExpanseDate.css';
 function ExpanseDate(props) {
   // Sepreating Js date logic from JSX syntax
   // toLocal'e'String E ကို မေမ့နဲ့ 
@@ -5,13 +6,11 @@ function ExpanseDate(props) {
   const day = props.date.toLocaleString('en-US', { day: '2-digit' });
   const year = props.date.getFullYear();
 
-
-
   return (
-    <div>
-      <div>{month}</div>
-      <div>{day}</div>
-      <div>{year}</div>
+    <div className="date-container">
+      <div className="date-month">{month}</div>
+      <div className="date-day">{day}</div>
+      <div className="date-year">{year}</div>
     </div>
   )
 }
