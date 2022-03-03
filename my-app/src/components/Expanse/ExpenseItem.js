@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ExpanseDate from "./ExpanseDate";
 import Card from '../UI/Card';
 import "./ExpanseItem.css";
@@ -6,11 +6,10 @@ import "./ExpanseItem.css";
 // props method accept all incoming properties from other Components
 export default function ExpanseItem(props) {
 
-  let title = props.title;
+  const [title, setTitle] = useState(props.title);
 
   const clickHandler = () => {
-    title = "Updated"
-    console.log(title);
+    setTitle('Updatedg')
   }
 
 
