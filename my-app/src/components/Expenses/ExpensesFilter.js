@@ -8,6 +8,8 @@ const ExpensesFilter = (props) => {
     props.onChangeFilter(event.target.value);
   };
 
+  // two way binding with selected value from parent component
+
   return (
     <div className='expenses-filter'>
       <div className='expenses-filter__control'>

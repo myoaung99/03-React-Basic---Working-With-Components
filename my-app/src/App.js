@@ -31,6 +31,8 @@ const App = () => {
 
   const addExpenseHandler = expense => {
     setExpenses(previous => {
+
+      // Update the list with previous datas
       return [
         expense,
         ...previous
@@ -47,6 +49,7 @@ const App = () => {
 
   return (
     <div>
+
       <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
     </div>
