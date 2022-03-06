@@ -4,6 +4,7 @@ import ExpenseItem from './ExpenseItem';
 import Card from '../UI/Card';
 import ExpensesFilter from './ExpensesFilter';
 import './Expenses.css';
+import ExpenseChart from './ExpenseChart';
 
 const Expenses = (props) => {
   // Initial state of selected multiple choice
@@ -30,8 +31,9 @@ const Expenses = (props) => {
     <Card className='expenses'>
 
       <ExpensesFilter selected={filteredYear} onChangeFilter={filterChangeHandler} />
+      <ExpenseChart expenses={filteredExpense} />
       <ul>
-        {filteredExpense.length == 0 && defaultContent}
+        {filteredExpense.length === 0 && defaultContent}
         {filteredExpense.length > 0 && showFilteredArray}
       </ul>
     </Card>
